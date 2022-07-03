@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absurdité</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+    <h1>Absurdité Survey Form</h1>
+    <p id="description">A company that makes no sense.</p>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label">Name <input type="text" name="name" placeholder="Enter your name" required></label>
+            <label id="email-label">Email <input type="email" name="email" placeholder="Enter your email" required></label>
+            <label id="age-label">Age <input type="number" name="age" min="10" max="120" placeholder="Enter your age"></label>
+        </fieldset>
+        <fieldset>
+            <label>Which option best describes your current role?
+                <select name="role" id="dropdown">
+                    <option value="">Select an option</option>
+                    <option value="1">Student</option>
+                    <option value="2">Full-time Weeb</option>
+                    <option value="3">No Job(Neet)</option>
+                    <option value="4">Other</option>
+                </select>
+            </label>
+        </fieldset>
+        <filedset>
+            <label>Are you a weeb?</label>
+            <label><input type="radio" name="account-type" class="inline"> Yes</label>
+            <label><input type="radio" name="account-type" class="inline"> No</label>
+            <label><input type="radio" name="account-type" class="inline" >Not sure(Stupid)</label>
+            <label>
+                <input type="checkbox" name="terms" class="inline" required /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+            </label>
+        </filedset>
+        <fieldset>
+            <label>How weeb are you? Select every options until your level</label>
+            <label>
+                <input type="checkbox" name="nonsene-options" class="inline"> Level(1)Stupid
+            </label>
+            <label>
+                <input type="checkbox" name="nonsene-options" class="inline"> Level(2)Weeb
+            </label>
+            <label>
+                <input type="checkbox" name="nonsene-options" class="inline"> Level(3) Superb
+            </label>
+            <label>
+                <input type="checkbox" name="nonsene-options" class="inline"> Level(4) Trash
+            </label>
+            <label>
+                <input type="checkbox" name="nonsene-options" class="inline"> Level(5) Useless
+            </label>
+            <label>
+                <input type="checkbox" name="nonsene-options" class="inline"> Level(6) Go Die.
+            </label>
+            <label>Any suggestion or comments?
+                <textarea name="nonsene-chat" rows="3" cols="30" placeholder="You should suggest yourself first you idiot!"></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" value="Sumbit" />
+    </form>
+</body>
+</html>
